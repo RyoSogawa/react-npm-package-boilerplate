@@ -33,7 +33,7 @@
     "version": "yarn format && git add -A src",
     "postversion": "git push && git push --tags",
     "prepare": "husky install",
-    "storybook": "start-storybook -p 6006",
+    "sb": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "devDependencies": {
