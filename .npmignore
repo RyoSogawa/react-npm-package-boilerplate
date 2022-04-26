@@ -5,7 +5,7 @@
 tests/
 
 .eslintignore
-.eslintrc.cjs
+.eslintrc.js
 .gitignore
 .node-version
 .prettierignore
