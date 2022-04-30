@@ -12,7 +12,7 @@ tests/
 .prettierrc
 .npmrc
 CHANGELOG.md
-jest.config.js
+vitest.config.ts
 LICENSE
 README.md
 tsconfig.json
