@@ -12,6 +12,7 @@ A simple boilerplate for npm package with TypeScript.
   - airbnb-typescript 
 - prettier
 - vitest
+- microbundle
 
 
 ## Getting started
