@@ -69,7 +69,6 @@
     "jsdom": "^19.0.0",
     "lint-staged": "^12.3.3",
     "microbundle": "^0.15.0",
-    "node-notifier": "^10.0.0",
     "prettier": "^2.5.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
