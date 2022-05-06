@@ -4,12 +4,14 @@ A simple boilerplate for npm package with TypeScript.
 
 ## Dependencies
 - Node.js 16.13.0
-- React
+- React 18
 - TypeScript 4.5.4
+- Storybook
 - eslint
+  - airbnb
+  - airbnb-typescript 
 - prettier
-- jest
-  - @swc/jest
+- vitest
 
 
 ## Getting started
