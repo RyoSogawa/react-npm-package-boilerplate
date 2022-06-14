@@ -26,6 +26,7 @@
   ],
   "include": [
     "src/**/*",
+    "stories/**/*",
     "tests/**/*",
     "vitest.config.ts"
   ]

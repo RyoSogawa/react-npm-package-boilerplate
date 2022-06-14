@@ -5,8 +5,8 @@
   },
   "exclude": [
     "lib/**/*",
+    "stories/**/*",
     "tests/**/*",
-    "src/stories"
   ],
   "include": [
     "src/**/*"
