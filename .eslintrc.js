@@ -8,13 +8,7 @@ module.exports = {
     'plugin:storybook/recommended',
     'prettier',
   ],
-  plugins: [
-    '@typescript-eslint',
-    'jsx-a11y',
-    'react',
-    'react-hooks',
-    'testing-library',
-  ],
+  plugins: ['@typescript-eslint', 'jsx-a11y', 'react', 'react-hooks', 'testing-library'],
   parser: '@typescript-eslint/parser',
   env: {
     browser: true,
@@ -38,8 +32,20 @@ module.exports = {
     'react/react-in-jsx-scope': 'off',
     'react/jsx-no-target-blank': 2,
     'react/jsx-props-no-spreading': 'off',
+    'react/jsx-sort-props': [
+      'error',
+      {
+        shorthandLast: true,
+        callbacksLast: true,
+        multiline: 'ignore',
+        ignoreCase: false,
+        noSortAlphabetically: true,
+        reservedFirst: ['key', 'ref'],
+      },
+    ],
     'react/function-component-definition': 'off',
     'react/require-default-props': 'off',
+    '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/space-before-blocks': 'off',
@@ -52,9 +58,35 @@ module.exports = {
     ],
     'no-restricted-exports': 'off',
     'consistent-return': 'off',
+    'import/order': [
+      'error',
+      {
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          ['parent', 'sibling'],
+          'object',
+          'index',
+          'type',
+        ],
+        'newlines-between': 'always',
+        alphabetize: { order: 'asc', caseInsensitive: true },
+        pathGroups: [
+          {
+            pattern: '{react,react-dom}',
+            group: 'builtin',
+            position: 'before',
+          },
+        ],
+        pathGroupsExcludedImportTypes: ['builtin', 'object'],
+      },
+    ],
     'import/prefer-default-export': 'off',
     'import/no-extraneous-dependencies': 'off',
+    'jsx-quotes': ['error', 'prefer-double'],
   },
+  ignorePatterns: ['.eslintrc.*', 'vitest.config.*'],
   overrides: [
     {
       files: ['*.test.ts', '*.test.tsx'],
@@ -64,4 +96,4 @@ module.exports = {
       },
     },
   ],
-}
+};
